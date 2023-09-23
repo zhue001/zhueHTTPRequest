@@ -22,3 +22,4 @@ window.zhue = {}, zhue.request = function(e, n, t = false) {
       (0 === s.length || s.includes(e)) && (0 === u.length || u.includes(o)) && n.onProcessEnd(t.responseText);
     } else n.onProcessEnd(!1);
   }, t.send(n.body);
+}
