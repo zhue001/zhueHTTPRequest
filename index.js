@@ -15,7 +15,7 @@ window.zhue = {}, zhue.request = function(e, n, t = false) {
   });
 }, zhue.request.request = function(e, n) {
   const t = new XMLHttpRequest();
-  t.open(n.method, e, !0), t.setRequestHeader("Cache-Control", n.cache ? "default" : "n-cache"), 
+  t.open(n.method, e, !0), t.setRequestHeader("Cache-Control", n.cache ? "default" : "no-cache"), 
   t.onreadystatechange = function() {
     if (4 === t.readyState) if (200 === t.status) {
       const e = t.getResponseHeader("Content-Type"), o = t.getResponseHeader("Content-Language"), s = n.AllowedMIME || [], u = n.AllowedLanguage || [];
