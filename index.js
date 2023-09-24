@@ -1,4 +1,4 @@
-if ((typeof window == 'object' && !window.zhue) && (typeof global == 'object' && !global.zhue)) window ? window.zhue = {} : global.zhue = {}
+if ((typeof window == 'object' && !window.zhue) || (typeof global == 'object' && !global.zhue)) window ? window.zhue = {} : global.zhue = {}
 /*
  * @function
  * @public
