@@ -5,7 +5,7 @@ window.zhue = {},
  * @param {string} e
  * @param {function} n
  * @param {any} t
- * @returns undefined
+ * @returns Promise
 */
 zhue.request = function(e, n, t = false) {
   return new Promise(function(n) {
