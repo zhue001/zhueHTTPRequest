@@ -1,4 +1,13 @@
-window.zhue = {}, zhue.request = function(e, n, t = false) {
+window.zhue = {}, 
+/*
+ * @function
+ * @public
+ * @param {string} e
+ * @param {function} n
+ * @param {any} t
+ * @returns undefined
+*/
+zhue.request = function(e, n, t = false) {
   return new Promise(function(n) {
     zhue.request.request(e, {
       method: t ? "POST" : "GET",
@@ -13,7 +22,15 @@ window.zhue = {}, zhue.request = function(e, n, t = false) {
   }).then(function(e) {
     n(e);
   });
-}, zhue.request.request = function(e, n) {
+}, 
+ /*
+ * @function
+ * @private
+ * @param {string} e
+ * @param {object} n
+ * @returns undefined
+*/
+zhue.request.request = function(e, n) {
   const t = new XMLHttpRequest();
   t.open(n.method, e, !0), t.setRequestHeader("Cache-Control", n.cache ? "default" : "no-cache"), 
   t.onreadystatechange = function() {
