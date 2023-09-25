@@ -21,4 +21,5 @@ zhue.request.request(URL地址, {
   AllowedLanguage: 允许的返回语言，如果为空数组则视为无限制,
   body: 请求体
 })
+```
 发起高级请求
